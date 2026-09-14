@@ -537,12 +537,14 @@ footer {
         padding: 25px 20px 40px;
     }
 }
-   /* =========================================
+
+/* =========================================
    ARTICLE PAGES
    ========================================= */
 
 .article-page {
-    padding: 90px 32px 140px;
+    width: 100%;
+    padding: 80px 32px 140px;
 }
 
 
@@ -559,17 +561,24 @@ footer {
 }
 
 .article-header h1 {
+    max-width: 900px;
+
+    margin: 0;
+
     font-family: "Playfair Display", serif;
-    font-size: clamp(58px, 8vw, 100px);
+    font-size: clamp(60px, 8vw, 100px);
     font-weight: 500;
+
     line-height: 0.98;
     letter-spacing: -0.055em;
 }
 
-.article-meta {
+.article-header .article-meta {
     margin-top: 30px;
 
     font-size: 13px;
+    line-height: 1.5;
+
     color: #898984;
 }
 
@@ -577,52 +586,88 @@ footer {
 /* ---------- ARTICLE CONTENT ---------- */
 
 .article-content {
-    max-width: 720px;
+    width: 100%;
+    max-width: 700px;
+
     margin: 0 auto;
 }
 
-.article-lead {
+.article-content .article-lead {
+    margin: 0;
+
     font-family: "Playfair Display", serif;
+    font-size: 24px;
+    line-height: 1.6;
 
-    font-size: 26px;
-    line-height: 1.55;
-
-    color: #4f4f4b;
+    color: #555550;
 }
+
+
+/* ---------- DIVIDER ---------- */
 
 .article-content hr {
+    width: 100%;
+
+    margin: 75px 0;
+
     border: 0;
     border-top: 1px solid #deded8;
-
-    margin: 80px 0;
 }
+
+
+/* ---------- ARTICLE HEADINGS ---------- */
+
+/*
+   These deliberately override the global homepage h2.
+*/
 
 .article-content h2 {
     max-width: none;
 
-    margin-top: 80px;
-    margin-bottom: 24px;
+    margin: 75px 0 20px;
 
-    font-size: 38px;
-    line-height: 1.15;
+    font-family: "Playfair Display", serif;
+    font-size: 34px;
+    font-weight: 500;
+
+    line-height: 1.2;
+    letter-spacing: -0.025em;
 }
 
-.article-content p {
-    margin-top: 20px;
+.article-content h2:first-of-type {
+    margin-top: 0;
+}
 
+
+/* ---------- ARTICLE BODY ---------- */
+
+.article-content p {
+    max-width: none;
+
+    margin: 0 0 28px;
+
+    font-family: "DM Sans", sans-serif;
     font-size: 17px;
     line-height: 1.9;
 
     color: #62625d;
 }
 
+
+/* ---------- REFERENCES ---------- */
+
 .article-content ol {
-    margin-top: 25px;
-    padding-left: 25px;
+    margin: 25px 0 0;
+    padding-left: 24px;
+
+    font-size: 14px;
+    line-height: 1.9;
 
     color: #70706b;
-    font-size: 14px;
-    line-height: 1.8;
+}
+
+.article-content li {
+    padding-left: 6px;
 }
 
 
@@ -652,7 +697,9 @@ footer {
 }
 
 
-/* ---------- ARTICLE MOBILE ---------- */
+/* =========================================
+   ARTICLE MOBILE
+   ========================================= */
 
 @media (max-width: 700px) {
 
@@ -668,7 +715,7 @@ footer {
         font-size: 58px;
     }
 
-    .article-lead {
+    .article-content .article-lead {
         font-size: 21px;
     }
 
@@ -678,12 +725,15 @@ footer {
 
     .article-content h2 {
         margin-top: 60px;
-        font-size: 34px;
+        font-size: 32px;
     }
 
     .article-content p {
         font-size: 16px;
         line-height: 1.8;
+    }
+
+}
     }
 
 
