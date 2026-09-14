@@ -536,4 +536,155 @@ footer {
     footer {
         padding: 25px 20px 40px;
     }
+   /* =========================================
+   ARTICLE PAGES
+   ========================================= */
+
+.article-page {
+    padding: 90px 32px 140px;
 }
+
+
+/* ---------- ARTICLE HEADER ---------- */
+
+.article-header {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 80px 0 110px;
+}
+
+.article-header .section-label {
+    margin-bottom: 28px;
+}
+
+.article-header h1 {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(58px, 8vw, 100px);
+    font-weight: 500;
+    line-height: 0.98;
+    letter-spacing: -0.055em;
+}
+
+.article-meta {
+    margin-top: 30px;
+
+    font-size: 13px;
+    color: #898984;
+}
+
+
+/* ---------- ARTICLE CONTENT ---------- */
+
+.article-content {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.article-lead {
+    font-family: "Playfair Display", serif;
+
+    font-size: 26px;
+    line-height: 1.55;
+
+    color: #4f4f4b;
+}
+
+.article-content hr {
+    border: 0;
+    border-top: 1px solid #deded8;
+
+    margin: 80px 0;
+}
+
+.article-content h2 {
+    max-width: none;
+
+    margin-top: 80px;
+    margin-bottom: 24px;
+
+    font-size: 38px;
+    line-height: 1.15;
+}
+
+.article-content p {
+    margin-top: 20px;
+
+    font-size: 17px;
+    line-height: 1.9;
+
+    color: #62625d;
+}
+
+.article-content ol {
+    margin-top: 25px;
+    padding-left: 25px;
+
+    color: #70706b;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+
+/* ---------- BACK LINK ---------- */
+
+.article-back {
+    margin-top: 100px;
+    padding-top: 30px;
+
+    border-top: 1px solid #deded8;
+}
+
+.article-back a {
+    font-size: 14px;
+    font-weight: 500;
+
+    border-bottom: 1px solid #cfcfc8;
+
+    transition:
+        color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.article-back a:hover {
+    color: #777772;
+    border-color: #20201f;
+}
+
+
+/* ---------- ARTICLE MOBILE ---------- */
+
+@media (max-width: 700px) {
+
+    .article-page {
+        padding: 40px 20px 90px;
+    }
+
+    .article-header {
+        padding: 60px 0 80px;
+    }
+
+    .article-header h1 {
+        font-size: 58px;
+    }
+
+    .article-lead {
+        font-size: 21px;
+    }
+
+    .article-content hr {
+        margin: 60px 0;
+    }
+
+    .article-content h2 {
+        margin-top: 60px;
+        font-size: 34px;
+    }
+
+    .article-content p {
+        font-size: 16px;
+        line-height: 1.8;
+    }
+
+
+}
+
